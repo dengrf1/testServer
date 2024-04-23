@@ -40,7 +40,5 @@ app.get("/", (req, res) => {
 //Database file download endpoint
 app.get("/download", (req, res) => {
     res.download(dbPath);
-    console.log(
-        timeStamp() + "\n" + "coordinatePublic.db file downloaded by user"
-    );
+    console.log(timeStamp() + "\n" + "coordinatePublic.db file downloaded by user");
 });
