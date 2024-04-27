@@ -1,7 +1,7 @@
 const express = require("express");
 const generateMD5 = require("./GenerateMD5");
 
-const dbPath = "./public/coordinatePublic.db";
+const dbPath = "./public/DiveSite.db";
 const app = express();
 const port = 5000;
 
@@ -40,5 +40,5 @@ app.get("/", (req, res) => {
 //Database file download endpoint
 app.get("/download", (req, res) => {
     res.download(dbPath);
-    console.log(timeStamp() + "\n" + "coordinatePublic.db file downloaded by user");
+    console.log(timeStamp() + "\n" + "DiveSite.db file downloaded by user");
 });

@@ -1,9 +1,9 @@
 const fs = require("fs");
 const crypto = require("crypto");
 
-const dbPath = "./public/coordinatePublic.db";
+const dbPath = "./public/DiveSite.db";
 
-// Function to generate MD5 hash for coordinatePublic.db
+// Function to generate MD5 hash for DiveSite.db
 function generateMD5() {
     return new Promise((resolve, reject) => {
         fs.readFile(dbPath, { encoding: "base64" }, (err, fileContents) => {
